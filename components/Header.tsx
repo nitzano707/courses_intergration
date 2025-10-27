@@ -4,6 +4,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white shadow">
       <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 text-center">
+        <img src="public/logo_int.png"></img>
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
           קורס-נט - מערכת חכמה להצגת מידע ואינטגרציות בין קורסים
         </h1>
