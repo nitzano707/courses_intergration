@@ -7,6 +7,9 @@ const Header: React.FC = () => {
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
           קורס-נט - מערכת חכמה להצגת מידע ואינטגרציות בין קורסים
         </h1>
+        <h2>
+        מערכת להדגמה בלבד עם נתונים פיקטיביים
+        </h2>
         <p className="text-md md:text-lg text-gray-600">
           <a 
             href="https://www.talpiot.ac.il/masters-degree-heterogeneous-teaching-education-in-society-ex/" 
