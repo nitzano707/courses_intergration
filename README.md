@@ -1,20 +1,73 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 📚 מערכת אינטגרציות בין קורסים
 
-# Run and deploy your AI Studio app
+אפליקציית ווב חכמה המציגה קורסים מתוך **Google Sheets** ויוצרת **אינטגרציות פדגוגיות ורעיוניות** בין קורסים באמצעות **בינה מלאכותית (AI)**.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1SSRney0EMfqazIG4faR4_36PROFYN4jo
+## ⚙️ הגדרות ראשוניות
 
-## Run Locally
+### 1. עדכון קישור לגיליון Google Sheets
+יש לעדכן את הקישור לגיליון בקובץ:
+```
+src/constants.ts
+```
 
-**Prerequisites:**  Node.js
+### 2. מבנה הגיליון
+יש להבטיח שהגיליון כולל את הכותרות הבאות (בסדר זהה בדיוק):
 
+| hours | CourseName | SemesterPrimary | SemesterSecondary | LecturerName | LecturerSecondary | CourseFormat | RationaleAbstract | CourseGoals | LearningOutcomes | AIIntegration | AssessmentMethods | CourseConnections | image_url |
+|--------|-------------|-----------------|------------------|---------------|------------------|---------------|------------------|--------------|------------------|----------------|------------------|------------------|
+| שעה/סדר המפגשים | שם הקורס | סמסטר עיקרי | סמסטר משני | שם המרצה | מרצה נוסף | מתכונת הקורס | רציונל / תקציר | מטרות הקורס | תוצרי למידה | שילוב בינה מלאכותית | דרישות ומרכיבי ציון | חיבורים לקורסים אחרים | כתובת תמונה |
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+> ⚠️ חשוב: הגיליון חייב להיות **שיתופי וציבורי** (Anyone with the link → View).
+
+---
+
+## 🧩 התאמות בקוד
+
+### 🏷️ כותרות עליונות  
+יש לעדכן את הכותרת הראשית (שם התוכנית והלינק למוסד) בקובץ:
+```
+src/components/Header.tsx
+```
+
+### © זכויות יוצרים  
+אין להסיר או לשנות את הודעת זכויות היוצרים המופיעה בקובץ:
+```
+src/App.tsx
+```
+
+---
+
+## 🧠 מפתח ה-AI (Google AI Studio)
+
+האפליקציה משתמשת במנוע AI של **Gemini** דרך Google AI Studio.
+
+יש להגדיר משתנה סביבה ב-Vercel:
+```
+GOOGLE_API_KEYS=<your_API_key_from_Google_AI_Studio>
+```
+
+---
+
+## 🚀 פריסה (Deploy)
+
+1. פרסו את הפרויקט ב־**Vercel**  
+2. הוסיפו משתנה סביבה בשם **GOOGLE_API_KEYS** עם המפתח האישי שלכם  
+3. עדכנו את הקישור לגיליון בקובץ `constants.ts`  
+4. האפליקציה מוכנה לפעולה 🎉  
+
+---
+
+## 💡 תכונות עיקריות
+
+- טעינת נתוני קורסים ישירות מ־Google Sheets  
+- מנוע סינון מתקדם לפי סמסטר, מרצה ומתכונת הקורס  
+- הצגת פרטי קורס מורחבים: רציונל, מטרות, תוצרים, שילוב AI ועוד  
+- בחירת עד 4 קורסים ליצירת אינטגרציות אוטומטיות באמצעות בינה מלאכותית  
+- עיצוב מודרני ורספונסיבי עם Tailwind CSS  
+
+---
+
+👨‍💻 פותח על ידי ד"ר ניצן אליקים  
+*מערכת חכמה לזיהוי חיבורים רעיוניים בין קורסים*
