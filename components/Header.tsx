@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     <header className="bg-white shadow">
       <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
-          הוראה הטרוגנית - חינוך בחברה משתנה (תשפ"ו)
+          שם החוג/המסלול יופיע כאן
         </h1>
         <p className="text-md md:text-lg text-gray-600">
           <a 
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
             rel="noopener noreferrer"  // מומלץ להוסיף מטעמי אבטחה
             className="text-blue-600 hover:text-blue-800 underline"  // אופציונלי - לעיצוב הלינק
           >
-            תואר שני, מכללת תלפיות
+            שם המוסד האקדמי יופיע כאן
           </a>
       </p>
       </div>
