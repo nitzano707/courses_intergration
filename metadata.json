@@ -1,0 +1,5 @@
+{
+  "name": "Course Advisor",
+  "description": "An application for M.Ed. students at Talpiot College to explore course integrations using generative AI. It allows filtering courses, viewing details, and generating conceptual connections between selected courses based on their rationale.",
+  "requestFramePermissions": []
+}
